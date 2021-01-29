@@ -94,7 +94,7 @@ class _DBTestPageState extends State<DBTestPage> {
               decoration: InputDecoration(
                   labelText: 'Age',
                   labelStyle: TextStyle(fontSize: 22, color: Colors.blue)),
-              validator: (val) => val.length == 0 ? 'Enter Age' : null,
+              validator: (val1) => val1.length == 0 ? 'Enter Age' : null,
               onSaved: (val1) => age = val1,
             ),
             Container(
@@ -158,8 +158,8 @@ class _DBTestPageState extends State<DBTestPage> {
                               isUpdating = true;
                               curUserId = employee.id;
                             });
-                            //namecontroller.text = employee.age;
-                            agecontroller.text = employee.name;
+                            namecontroller.text = employee.name;
+                           //agecontroller.text = employee.name;
                           },
                         ),
                         DataCell(
